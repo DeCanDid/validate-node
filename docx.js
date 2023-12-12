@@ -35,8 +35,16 @@ const firebaseConfig = {
     })
   }
 
+  
+
   function load() {
     window.location.href = "test.html";
   }
+
+  function onClick(e) {
+    e.preventDefault();
+    grecaptcha.enterprise.ready(async () => {
+      const token = await grecaptcha.enterprise.execute('6LeltC4pAAAAAKb2SfrDFDY2_UwPTkp4Xu3uO7oC', {action: 'LOGIN'});
+    });}
 
 
